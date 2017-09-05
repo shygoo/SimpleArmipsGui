@@ -1,3 +1,8 @@
+# VS Build/Local
+bin
+obj
+.vs
+
 # Windows image file caches
 Thumbs.db
 ehthumbs.db

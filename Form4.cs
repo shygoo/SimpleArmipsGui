@@ -4,9 +4,10 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.IO;
-using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using System.Net;
+using System.Text.RegularExpressions;
 
 namespace armipsSimpleGui
 {
@@ -161,6 +162,11 @@ namespace armipsSimpleGui
                 upBut.Enabled = false;
                 downBut.Enabled = false;
             }
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            ArmipsUpdater.Run(false);
         }
     }
 }
